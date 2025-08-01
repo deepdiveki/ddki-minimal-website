@@ -18,7 +18,7 @@ const Header = () => {
   useEffect(() => {
     async function fetchUser() {
       try {
-        const res = await fetch("https://www.deepdive-ki.de/api/getSession", {
+        const res = await fetch("https://plattform.deepdive-ki.de/api/getSession", {
           credentials: "include",
         });
         if (!res.ok) return;
@@ -163,13 +163,13 @@ const Header = () => {
               ) : (
                 <>
                   <Link
-                    href="https://www.deepdive-ki.de/auth/signin"
+                    href="https://plattform.deepdive-ki.de/auth/signin"
                     className="text-sm text-white hover:text-opacity-75"
                   >
                     Login
                   </Link>
                   <Link
-                    href="https://www.deepdive-ki.de/auth/signup"
+                    href="https://plattform.deepdive-ki.de/auth/signup"
                     className="button-border-gradient hover:button-gradient-hover relative flex items-center gap-1.5 rounded-lg px-4.5 py-2 text-sm text-white shadow-button hover:shadow-none"
                   >
                     Registrieren
