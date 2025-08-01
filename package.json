@@ -26,6 +26,7 @@
     "lucide-react": "^0.501.0",
     "motion": "^12.4.1",
     "next": "^15.1.5",
+    "next-auth": "^4.24.11",
     "nextjs-toploader": "^3.7.15",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",

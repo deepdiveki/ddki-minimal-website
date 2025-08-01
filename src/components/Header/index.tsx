@@ -6,15 +6,31 @@ import { useEffect, useState } from "react";
 import logo from "../../../public/images/logo/logo.svg";
 import DropDown from "./DropDown";
 import menuData from "./menuData";
+import { signOut } from "next-auth/react";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
-
-  //const { data: session } = useSession();
+  const [userName, setUserName] = useState<string | null>(null);
 
   const router = useRouter();
   const pathUrl = usePathname();
+
+  useEffect(() => {
+    async function fetchUser() {
+      try {
+        const res = await fetch("https://deepdive-ki.de/api/getSession", {
+          credentials: "include",
+        });
+        if (!res.ok) return;
+        const data = await res.json();
+        if (data.name) setUserName(data.name);
+      } catch (error) {
+        setUserName(null);
+      }
+    }
+    fetchUser();
+  }, []);
 
 
 
@@ -124,20 +140,26 @@ const Header = () => {
             </nav>
 
             <div className="mt-7 flex items-center gap-4  lg:mt-0 ">
-              {false ? (
+              {userName ? (
                 <>
-                  <Link
-                    href="https://www.deepdive-ki.de/profil"
-                    className="max-w-[180px] truncate whitespace-nowrap overflow-hidden text-ellipsis text-sm text-white hover:text-opacity-75 "
-                    >
-                      session.user.name
-                    </Link>
-                  <Link
-                    href="https://www.deepdive-ki.de/auth/signout"
+                  <button
+                    aria-label="Profile button"
+                    onClick={() => {
+                      window.location.href = "https://deepdive-ki.de/profil"
+                    }}
+                    className={`text-sm ${pathUrl === "/profil" ? "text-blue-400" : "text-white hover:text-opacity-75"}`}
+                  >
+                    {userName}
+                  </button>
+                  <button
+                    aria-label="Sign Out button"
+                    onClick={async () => {
+                      window.location.href = "https://deepdive-ki.de/api/logout";
+                    }}
                     className="text-sm text-white hover:text-opacity-75"
                   >
-                    Signout
-                  </Link>
+                    Sign out
+                  </button>
                 </>
               ) : (
                 <>
