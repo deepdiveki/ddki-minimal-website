@@ -144,7 +144,7 @@ const Header = () => {
                   <button
                     aria-label="Profile button"
                     onClick={() => {
-                      window.location.href = "https://deepdive-ki.de/profil"
+                      window.location.href = "https://plattform.deepdive-ki.de/profil"
                     }}
                     className={`text-sm ${pathUrl === "/profil" ? "text-blue-400" : "text-white hover:text-opacity-75"}`}
                   >
@@ -153,7 +153,7 @@ const Header = () => {
                   <button
                     aria-label="Sign Out button"
                     onClick={async () => {
-                      window.location.href = "https://deepdive-ki.de/api/logout";
+                      window.location.href = "https://plattform.deepdive-ki.de/api/logout";
                     }}
                     className="text-sm text-white hover:text-opacity-75"
                   >
