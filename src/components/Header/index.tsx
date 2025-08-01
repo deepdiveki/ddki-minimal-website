@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import logo from "../../../public/images/logo/logo.svg";
 import DropDown from "./DropDown";
 import menuData from "./menuData";
-import { signOut } from "next-auth/react";
 
 const Header = () => {
   const [navigationOpen, setNavigationOpen] = useState(false);
@@ -19,7 +18,7 @@ const Header = () => {
   useEffect(() => {
     async function fetchUser() {
       try {
-        const res = await fetch("https://deepdive-ki.de/api/getSession", {
+        const res = await fetch("https://www.deepdive-ki.de/api/getSession", {
           credentials: "include",
         });
         if (!res.ok) return;
