@@ -1,0 +1,18 @@
+# Ignore local files
+*.log
+*.md
+*.ts
+*.tsx
+*.map
+.env
+.env.local
+
+# Ignore test files
+tests/
+_tests_/
+coverage/
+
+# Ignore build caches and unnecessary directories
+node_modules/.cache/
+node_modules/**/.cache
+.next/cache/

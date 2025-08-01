@@ -1,0 +1,54 @@
+{
+  "name": "ddki-minimal-website",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start -p $PORT",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "^3.31.0",
+    "@types/node": "^20.17.16",
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.4.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.6.3",
+    "fslightbox-react": "^1.8.0",
+    "gray-matter": "^4.0.3",
+    "gsap": "^3.13.0",
+    "lucide-react": "^0.501.0",
+    "motion": "^12.4.1",
+    "next": "^15.1.5",
+    "nextjs-toploader": "^3.7.15",
+    "nodemailer": "^6.10.0",
+    "react": "^19.0.0",
+    "react-countup": "^6.5.3",
+    "react-dom": "^19.0.0",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.5.0",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "swiper": "^11.2.2",
+    "tailwind-merge": "^3.3.0",
+    "tailwindcss": "^3.3.4",
+    "typescript": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/fslightbox-react": "^1.7.3",
+    "@types/nodemailer": "^6.4.17",
+    "eslint": "^9.20.0",
+    "eslint-config-next": "^15.3.2"
+  },
+  "overrides": {
+    "@types/react": "npm:types-react@19.0.0-rc.1",
+    "@types/react-dom": "npm:types-react-dom@19.0.0-rc.1",
+    "jsdom": "latest"
+  }
+}
