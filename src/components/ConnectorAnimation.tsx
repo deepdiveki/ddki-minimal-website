@@ -77,43 +77,43 @@ export default function ConnectorAnimation({ buttonRef, boxRefs }: ConnectorAnim
     };
   }, [buttonRef, boxRefs]);
 
-  useEffect(() => {
-    let animationFrame: number;
+  // useEffect(() => {
+  //   let animationFrame: number;
 
-    const detectCollision = () => {
-      const svgEl = svgRef.current as SVGSVGElement;
-      if (!paths.length || !svgEl) return;
+  //   const detectCollision = () => {
+  //     const svgEl = svgRef.current as SVGSVGElement;
+  //     if (!paths.length || !svgEl) return;
 
-      const glowThreshold = 50;
-      hitboxes.forEach((box, i) => {
-        if (!box || !paths[i] || !boxRefs[i]?.current) return;
+  //     const glowThreshold = 50;
+  //     hitboxes.forEach((box, i) => {
+  //       if (!box || !paths[i] || !boxRefs[i]?.current) return;
 
-        const now = Date.now() / 1000;
-        const time = (now % pulseDuration) / pulseDuration;
+  //       const now = Date.now() / 1000;
+  //       const time = (now % pulseDuration) / pulseDuration;
 
-        // Nur auslösen, wenn Punkt mindestens 95 % des Pfads zurückgelegt hat
-        if (time < 0.0) return;
+  //       // Nur auslösen, wenn Punkt mindestens 95 % des Pfads zurückgelegt hat
+  //       if (time < 0.0) return;
 
-        const point = getPointOnPathInViewport(paths[i].d, time, svgEl);
+  //       const point = getPointOnPathInViewport(paths[i].d, time, svgEl);
 
-        setDebugPoint(point);
+  //       setDebugPoint(point);
 
-        const inBox = point.x >= box.x && point.x <= box.x + box.width &&
-                      point.y >= box.y && point.y <= box.y + box.height;
+  //       const inBox = point.x >= box.x && point.x <= box.x + box.width &&
+  //                     point.y >= box.y && point.y <= box.y + box.height;
 
-        if (inBox) {
-          //console.log(`Glow ausgelöst bei Box ${i}`);
-          boxRefs[i].current.classList.add("glow-up");
-          setTimeout(() => boxRefs[i]?.current?.classList.remove("glow-up"), 700);
-        }
-      });
+  //       if (inBox) {
+  //         //console.log(`Glow ausgelöst bei Box ${i}`);
+  //         boxRefs[i].current.classList.add("glow-up");
+  //         setTimeout(() => boxRefs[i]?.current?.classList.remove("glow-up"), 700);
+  //       }
+  //     });
 
-      animationFrame = requestAnimationFrame(detectCollision);
-    };
+  //     animationFrame = requestAnimationFrame(detectCollision);
+  //   };
 
-    animationFrame = requestAnimationFrame(detectCollision);
-    return () => cancelAnimationFrame(animationFrame);
-  }, [paths, hitboxes, boxRefs]);
+  //   animationFrame = requestAnimationFrame(detectCollision);
+  //   return () => cancelAnimationFrame(animationFrame);
+  // }, [paths, hitboxes, boxRefs]);
 
 //   useEffect(() => {
 //     console.log("ConnectorAnimation: paths", paths);
@@ -160,9 +160,8 @@ export default function ConnectorAnimation({ buttonRef, boxRefs }: ConnectorAnim
             transition={{ duration: 1.5, delay: path.delay }}
           />
           <motion.circle
-            r="5"
+            r="0"
             fill="#C084FC"
-            filter="url(#glow)"
           >
             <animateMotion dur={`${pulseDuration}s`} repeatCount="indefinite" rotate="auto">
               <mpath href={`#${path.id}`} />
