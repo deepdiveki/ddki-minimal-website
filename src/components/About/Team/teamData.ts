@@ -25,12 +25,6 @@ const teamData: Team[] = [
     designation: "Full Stack Software Engineer",
     image: "/images/team/team-05.png",
   },
-  {
-    id: 86,
-    name: "Chat mit DDKI",
-    designation: "KI Chatbot: Informiert über DDKI und das KI-Schulbüro",
-    image: "/images/team/team-08.png",
-  },
   ];
 
 export default teamData;
