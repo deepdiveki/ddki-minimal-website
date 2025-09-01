@@ -19,6 +19,12 @@ export const productsLink: FooterLink[] = [
     href: "/fortbildungen",
     newTab: false,
   },
+  {
+    id: 4,
+    title: "Websites",
+    href: "/websites",
+    newTab: false,
+  },
 ];
 
 export const companiesLink: FooterLink[] = [

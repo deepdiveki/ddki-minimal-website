@@ -28,13 +28,13 @@ const HeroChatbot = () => {
         <div className="flex flex-wrap justify-between gap-11 xl:flex-nowrap">
           {/* Linker Bereich */}
           <div className="wow fadeInLeft w-full max-w-[570px]">
-            <span className="hero-subtitle-text mb-5 block font-semibold">
-            KI-Schulbüro
+          <span className="hero-subtitle-text mb-5 block font-semibold">
+              KI-Schulbüro
             </span>
 
-            <h2 className="mb-5 text-2xl font-extrabold text-white sm:text-4xl xl:text-heading-2">
-              Die intelligente Hilfe für Ihr Schulbüro und Ihre Verwaltung
-            </h2>
+            <h1 className="mb-6 text-3xl font-extrabold text-white sm:text-5xl xl:text-heading-1">
+              Das KI-Schulbüro auf Ihrer Website
+            </h1>
             <p className="mb-9 font-medium">
             Mit unserem KI-Schulbüro haben Sie die Möglichkeit, in Ihrer Schulwebsite einen KI-Chatbot zu integrieren. Damit verbessern Sie den Informationsfluss zu Ihren Schülerinnen und Schülern, Eltern und Lehrkräften. Das KI-Schulbüro beantwortet Fragen zu Öffnungszeiten, Terminen, Anmeldungen, Vertretungsplänen und vielem mehr. So entlasten Sie Ihr Schulbüro und Ihre Verwaltung und bieten gleichzeitig einen modernen Service für Ihre Schulgemeinschaf - rund um die Uhr verfügbar und in 32 Sprachen.
             </p>

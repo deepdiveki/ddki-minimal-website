@@ -5,11 +5,11 @@ import SinglePricing from "./SInglePricing"; // Korrigierter Import
 const pricingData = [
   {
     title: "KI-Schulbüro",
-    price: "150,00 €",
+    price: "Auf Anfrage",
     features: [
       "Individuelles KI-Schulbüro",
       "Tägliches DB Update",
-      "Sprachmodelle: GPT-4o",
+      "Die besten Sprachmodelle",
       "Unbegrenzte Unterhaltungen",
       "Kundensupport",
     ],
@@ -17,11 +17,11 @@ const pricingData = [
   },
   {
     title: "KI-Schulbüro Premium",
-    price: "250,00 €",
+    price: "Auf Anfrage",
     features: [
       "KI-Schulbüro mit Kuration",
       "Für 35 Sprachen",
-      "Sprachmodelle: GPT-4o",
+      "Die besten Sprachmodelle",
       "Unbegrenzte Unterhaltungen",
       "Priorisierter Kundensupport",
     ],

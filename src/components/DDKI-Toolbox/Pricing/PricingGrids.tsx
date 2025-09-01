@@ -7,7 +7,7 @@ const pricingData = [
     price: "4,99 €",
     features: [
       "All-in-One KI-Chat",
-      "ChatGPT 4o Qualität",
+      "Die besten Sprachmodelle",
       "Planung von Unterrichtseinheiten",
       "Stetig neue Funktionalitäten",
       "Datenschutzkonforme KI-Nutzung",
@@ -21,7 +21,7 @@ const pricingData = [
     price: "99,99 €",
     features: [
       "Zugang für 30 Lizenzenznehmende",
-      "ChatGPT 4o Qualität", 
+      "Die besten Sprachmodelle", 
       "Exklusives Feature-Development",
       "Feedback- und Feature-Umfragen",
       "Onboarding durch unser Team",

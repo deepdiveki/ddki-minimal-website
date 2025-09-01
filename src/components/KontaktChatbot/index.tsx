@@ -82,8 +82,8 @@ const Kontakt = () => {
 
           <SectionTitle
             subTitle="Können wir helfen?"
-            title="Welcher ChatBot passt zu Ihrer Schule?"
-            paragraph="Kontaktieren Sie uns, wenn Sie Fragen haben oder Hilfe bei der Auswahl eines ChatBots benötigen. Wir helfen Ihnen gerne weiter."
+            title="Welches KI-Schulbüro passt zu Ihrer Schule?"
+            paragraph="Kontaktieren Sie uns, wenn Sie Fragen haben oder Hilfe bei der Auswahl eines KI-Schulbüros benötigen. Wir helfen Ihnen gerne weiter."
           />
 
           {/* Support form */}
