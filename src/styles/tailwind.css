@@ -513,3 +513,30 @@ textarea {
   box-shadow: 0 0 20px 6px rgba(192, 132, 252, 0.6);
   transition: box-shadow 0.3s ease;
 }
+
+/* Benutzerdefinierte Animationen für AI/LLM-Engine */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-slow-reverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 15s linear infinite;
+}

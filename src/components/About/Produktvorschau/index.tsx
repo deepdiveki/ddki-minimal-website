@@ -1,11 +1,5 @@
-"use client";
 import SectionTitle from "@/components/Common/SectionTitle";
-import dynamic from "next/dynamic";
-
-const DeepChatAnimationCarousel = dynamic(
-  () => import("@/components/DeepChatAnimation1"),
-  { ssr: false }
-);
+import DeepChatAnimationCarousel from "@/components/DeepChatAnimation1";
 
 const Produktvorschau = () => {
   return (

@@ -6,8 +6,8 @@ import { Metadata } from "next";
 import { integrations } from "../../../integrations.config";
 import CookieBanner from "@/components/CookieBanner";
 import Kontakt from "@/components/Kontakt";
-import Produktvorschau from "@/components/About/Produktvorschau";
 
+// import FloatingChatbotWidget from "@/components/FloatingChatbotWidget";
 
 
 export const metadata: Metadata = {
@@ -20,13 +20,18 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Produktvorschau />
       <FeaturesList />
       <Features />
       <Kontakt />
       <CallToAction />
       {/* <CookieBanner />; */}
 
+      {/* Chatbot Widget */}
+      {/* <FloatingChatbotWidget
+        chatbotName="DeepDiveKI-Chatbot"
+        primaryColor="#8646F4"
+        position="bottom-right"
+      /> */}
     </>
   );
 }

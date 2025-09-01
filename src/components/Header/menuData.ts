@@ -26,10 +26,16 @@ const menuData: Menu[] = [
     path: "/chatbot-fuer-ihre-schule"
   },
   {
-    id: 5,
+    id: 8,
     title: "Fortbildungen",
     newTab: false,
     path: "/fortbildungen"
+  },
+  {
+    id: 9,
+    title: "Websites",
+    newTab: false,
+    path: "/websites"
   },
 
 
