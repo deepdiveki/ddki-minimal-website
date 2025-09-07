@@ -99,7 +99,7 @@ const Hero = () => {
           <h1 className="mb-6 text-3xl font-extrabold text-white sm:text-5xl xl:text-heading-1">
             DeepDiveKI – Ihr Partner für KI
           </h1>
-          <p className="mx-auto mb-9 max-w-[500px] font-medium md:text-lg">
+          <p className="mx-auto mb-9 max-w-[500px] font-medium md:text-lg text-white">
             Wir bieten vier innovative KI-Produkte für Lehrende, Lernende und Schulen – perfekt aufeinander abgestimmt:
           </p>
 

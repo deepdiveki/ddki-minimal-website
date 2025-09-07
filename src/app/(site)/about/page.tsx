@@ -8,6 +8,7 @@ import Clients from "@/components/About/Kunden";
 import Kontakt from "@/components/Kontakt";
 import Produktvorschau from "@/components/About/Produktvorschau";
 import UserFeedback from "@/components/About/UserFeedback";
+import HeroStaticAbout from "@/components/HeroStaticAbout";
 
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <Breadcrumb pageTitle="Über uns" />
+      <HeroStaticAbout />
       <AboutSection />
       <Team />
       <UserFeedback/>

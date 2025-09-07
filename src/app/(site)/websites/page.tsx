@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import Kontakt from "@/components/Kontakt";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 // Inline BentoGrid components
 const BentoGrid = ({ className, children }: { className?: string; children: React.ReactNode }) => (
@@ -388,12 +389,13 @@ export default function WebsitesPage() {
         <div className="mx-auto max-w-[900px] px-4 sm:px-8 xl:px-0">
           <div className="text-center">
             <span className="hero-subtitle-gradient hover:hero-subtitle-hover relative mb-5 inline-flex items-center gap-2 rounded-full px-4.5 py-2 text-sm font-medium">
+              <Image src="/images/hero/icon-title.svg" alt="icon" width={16} height={16} />
               <span className="hero-subtitle-text">Websites</span>
             </span>
             <h1 className="mb-6 text-3xl font-extrabold text-white sm:text-5xl xl:text-heading-1">
               Websites für Schulen
             </h1>
-            <p className="mx-auto mb-9 max-w-[600px] font-medium md:text-lg text-gray-300">
+            <p className="mx-auto mb-9 max-w-[600px] font-medium md:text-lg text-white">
               Professionelle Schulwebsites mit modernem Design und benutzerfreundlicher Bedienung. 
               Responsive Layouts und Content-Management-Systeme für eine effektive Online-Präsenz + KI-Schulbüro.
             </p>

@@ -33,7 +33,7 @@ const Footer = () => {
 
 <p className="mb-12 xl:w-4/5">
   <br />
-  Unsere Plattform bietet drei KI-Produkte für Schulen und Universitäten: 1. den DeepChat, 2. das KI-Schulbüro und 3. Fortbildungen zum Thema Künstliche Intelligenz. Damit unterstützen wir Sie dabei, KI sinnvoll und effektiv in Ihrer Schule einzusetzen.</p>
+  Unsere Plattform bietet vier KI-Produkte für Schulen und Universitäten: 1. den DeepChat, 2. das KI-Schulbüro, 3. Fortbildungen zum Thema Künstliche Intelligenz und 4. Websites für Schulen. Damit unterstützen wir Sie dabei, KI sinnvoll und effektiv in Ihrer Schule einzusetzen.</p>
 
 
               <p className="mt-5.5 font-medium">

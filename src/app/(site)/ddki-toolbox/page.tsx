@@ -9,6 +9,7 @@ import Uebersicht from "@/components/DDKI-Toolbox/Uebersicht";
 import Pricing from "@/components/DDKI-Toolbox/Pricing";
 import DDKICHAT from "@/components/DDKI-Toolbox/DDKICHAT";
 import Produktvorschau from "@/components/About/Produktvorschau";
+import HeroStaticDeepChat from "@/components/HeroStaticDeepChat";
 
 export const metadata: Metadata = {
   title: "DeepDiveKI bietet Schulen innovative KI-Tools (DeepChat, Schul-Chatbot) und Fortbildungen für Lehrkräfte. Entdecken Sie jetzt, wie KI Ihren Schulalltag bereichern kann!",
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 const ddki_toolbox = () => {
   return (
     <>
+      <HeroStaticDeepChat />
       <DDKICHAT />
       <Produktvorschau />
       <Features />

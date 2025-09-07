@@ -31,7 +31,7 @@ const ddkitools: Feature[] = [
   {
     id: 27,
     title: "DeepChat Performance",
-    description: "Besten LLM's für Ihre Chats. GPT o3, Gemini 2.0, Sonar. Mit unserer DDKI Auto-Select & Prompt-Architecture Technologie wählt der DeepChat automatisch die besten Modelle für Ihre Chats.",
+    description: "Besten LLM's für Ihre Chats. Mit unserer DDKI Auto-Select & Prompt-Architecture Technologie wählt der DeepChat automatisch die besten Modelle für Ihre Chats.",
     icon: "/images/features/icon-02.svg",
     animationComponent: chatbotAnimation,
     link: "https://toolbox.deepdive-ki.de/",

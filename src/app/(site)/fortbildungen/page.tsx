@@ -3,6 +3,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 import CallToAction from "@/components/CallToAction";
 import { Metadata } from "next";
 import FeaturesList from "@/components/Fortbildungen-Neu/Module";
+import HeroStatic from "@/components/HeroStatic";
 
 export const metadata: Metadata = {
   title: "KI-Fortbildungen für Lehrkräfte | DeepDiveKI",
@@ -13,7 +14,7 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      <Breadcrumb pageTitle="DeepDiveKI Fortbildungen" />
+      <HeroStatic />
       <AboutSection />
       <FeaturesList />
       <CallToAction />
